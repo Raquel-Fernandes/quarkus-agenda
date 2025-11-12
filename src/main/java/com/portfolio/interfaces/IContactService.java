@@ -1,4 +1,4 @@
-package com.portfolio.service;
+package com.portfolio.interfaces;
 
 public interface IContactService {
 }

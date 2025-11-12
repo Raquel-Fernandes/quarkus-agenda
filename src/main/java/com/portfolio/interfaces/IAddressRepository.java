@@ -1,4 +1,4 @@
-package com.portfolio.repository;
+package com.portfolio.interfaces;
 
 public interface IAddressRepository {
 }
