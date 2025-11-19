@@ -1,9 +1,7 @@
 package com.portfolio.model;
 
-import java.util.Date;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
-import java.util.Objects;
 
 public class Address extends PanacheEntityBase {
 
@@ -12,12 +10,12 @@ public class Address extends PanacheEntityBase {
     @Column
     private Integer id;
     @Column
-    private String name;
+    public Integer contact_id ;
     @Column
-    private String email;
+    public String street;
     @Column
-    private String phone;
+    public Integer number ;
     @Column
-    private Date birth_date;
+    public String zip_code;
 
 }

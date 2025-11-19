@@ -2,7 +2,7 @@ package com.portfolio.model;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
-import java.util.Objects;
+import java.util.Date;
 
 @Entity
 public class Contact extends PanacheEntityBase {
@@ -10,12 +10,12 @@ public class Contact extends PanacheEntityBase {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @Column
-    private Integer contact_id;
+    public String name;
     @Column
-    private String street;
+    public String email;
     @Column
-    private Integer number;
+    public String phone;
     @Column
-    private String zip_code;
+    public Date birth_date;
 
 }
