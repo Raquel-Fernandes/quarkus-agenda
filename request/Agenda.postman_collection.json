@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c9dc07ec-36ab-4aba-98e0-94345e34736f",
+		"name": "Agenda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50667210",
+		"_collection_link": "https://fernandessantos-r1-9975156.postman.co/workspace/Raquel-Fernandes's-Workspace~b055fb57-e9cf-41ee-8513-08501d175cee/collection/50667210-c9dc07ec-36ab-4aba-98e0-94345e34736f?action=share&source=collection_link&creator=50667210"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Teste\",\r\n  \"email\": \"teste@teste.com\",\r\n  \"phone\": \"61999999999\",\r\n  \"birthDate\": \"2022-03-10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{API_URL}}/contact/create",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+						"contact",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
