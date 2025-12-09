@@ -1,6 +1,7 @@
 package com.portfolio.repository;
 
 import com.portfolio.dto.AddressDTO;
+import com.portfolio.dto.ContactDTO;
 import com.portfolio.interfaces.IAddressRepository;
 import com.portfolio.model.Address;
 import com.portfolio.model.Contact;
@@ -33,5 +34,14 @@ public class AddressRepository implements PanacheRepository<Address>, IAddressRe
 
         return address;
 
+    }
+
+    public void create(long contactId, AddressDTO addressDTO) {
+        Address address = new Address();
+        address.contact_id = contactId;
+        address.number = addressDTO.number;
+        address.street = addressDTO.street;
+        address.zip_code = addressDTO.zip_code;
+        PanacheRepository.super.persist(address);
     }
 }

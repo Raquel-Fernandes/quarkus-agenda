@@ -10,7 +10,7 @@ public class Address extends PanacheEntityBase {
     @Column
     private Integer id;
     @Column
-    public Integer contact_id ;
+    public long contact_id ;
     @Column
     public String street;
     @Column

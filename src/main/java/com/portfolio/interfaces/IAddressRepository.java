@@ -10,4 +10,5 @@ public interface IAddressRepository {
     public List<Address> listAddressByContactId(Integer contactId);
     public boolean delete(long addressId);
     public Address update(long addressId, AddressDTO updateAddress);
+    public void create(long contactId, AddressDTO addressDTO);
 }

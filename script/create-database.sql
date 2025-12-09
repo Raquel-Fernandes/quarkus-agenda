@@ -1,6 +1,8 @@
+CREATE SEQUENCE contact_seq;
+
 -- Criação da tabela contact
 CREATE TABLE contact (
-    id SERIAL PRIMARY KEY,
+    id BIGINT PRIMARY KEY DEFAULT nextval('contact_seq'),
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
     phone VARCHAR(11) NOT NULL,
